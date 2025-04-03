@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import '../src/assets/css/style.css';
+import './index.css';
 import {GoogleOAuthProvider} from '@react-oauth/google';
 import { HashRouter as Router } from 'react-router';
 import { Provider } from 'react-redux';
