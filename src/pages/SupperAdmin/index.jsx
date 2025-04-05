@@ -40,7 +40,8 @@ function SupperAdmin() {
             
             const response = await fetch("https://quanlynhahang.onrender.com/api/v1/create-admin", {
                 method: "POST",
-                body: formData, // Không cần đặt `Content-Type`, fetch sẽ tự động thêm
+                body: formData,
+                credentials: 'include' // Nếu dùng session
             });
     
             const result = await response.json();
