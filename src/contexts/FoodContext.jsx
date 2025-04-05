@@ -47,13 +47,13 @@ export const FoodProvider = ({children}) => {
             return;
         }
         try{
-            const response = await getCart(login.id);
-            if(response.errCode === 0) {
-                localStorage.setItem('food', JSON.stringify(response.cartItem));
-                setCart(response.cartItem);
-            }else{
+            // const response = await getCart(login.id);
+            // if(response.errCode === 0) {
+            //     localStorage.setItem('food', JSON.stringify(response.cartItem));
                 setCart([]);
-            }
+            // }else{
+            //     setCart([]);
+            // }
         }catch(error){  
             console.log(error);
         }
