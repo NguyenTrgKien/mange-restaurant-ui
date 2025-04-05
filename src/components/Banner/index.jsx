@@ -61,12 +61,13 @@ function Banner({login}) {
 
     const foodBanner = async() => {
         try{
-            const response = await getFoodBanner();
-            console.log(response)
-            if(response.errCode === 0) {
-                setDataFoodBanner(response.message);
-                setCurrentDishDisplay(response.message[0]);
-            }
+            // const response = await getFoodBanner();
+            // console.log(response)
+            // if(response.errCode === 0) {
+            //     setDataFoodBanner(response.message);
+                setDataFoodBanner([]);
+            //     setCurrentDishDisplay(response.message[0]);
+            // }
         }catch(error) {
             console.log(error);
         }
