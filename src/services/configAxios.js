@@ -5,8 +5,7 @@ const axiosConfig = axios.create({
     withCredentials: true,
     headers: {
         "Content-Type": "application/json",
-        "accept": "application/json",
-        'ngrok-skip-browser-warning': 'true'  // Loại bỏ cảnh báo khi gọi api thông qua ngrok
+        "Accept": "application/json",
     },
 })
 axiosConfig.interceptors.response.use(response => {
