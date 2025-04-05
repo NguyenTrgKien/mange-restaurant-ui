@@ -245,7 +245,7 @@ function Order() {
                                     detailOrder.OrderItems.length > 0 && detailOrder.OrderItems.map((it) => {
                                         return (
                                             <div key={it.id} className="flex items-center gap-[1rem]">
-                                                <img src={`http://localhost:3000/${it.Food.image}`} alt="img" className="w-[5rem] h-[5rem] object-cover"/>
+                                                <img src={`/${it.Food.image}`} alt="img" className="w-[5rem] h-[5rem] object-cover"/>
                                                 <div className="flex flex-col items-start">
                                                     <span className="font-bold">{it.Food.dishName}</span>
                                                     <span className="text-[1.2rem]">{it.Food.price}đ</span>

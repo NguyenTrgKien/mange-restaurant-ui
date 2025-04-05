@@ -77,7 +77,7 @@ function MainDish({titleAdd}) {
                             <div key={value.id} className="w-full h-[32rem] md:h-[35rem] flex flex-col rounded-[2rem] px-[1rem] md:px-[2rem] pb-[2rem] bg-[#ffffff] shadow-2xl ">
                                 <div className="w-full h-[14rem] flex justify-center items-center rounded-[50%] ">
                                     <div className="w-[12rem] h-[12rem] flex justify-center items-center rounded-[50%]">
-                                        <img src={`http://localhost:3000/${value.image}`} alt="img" className="w-full h-full rounded-[50%] object-cover shadowImg"/>
+                                        <img src={`/${value.image}`} alt="img" className="w-full h-full rounded-[50%] object-cover shadowImg"/>
                                     </div>
                                 </div>
                                 <div className="flex flex-col">

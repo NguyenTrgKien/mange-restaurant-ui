@@ -259,7 +259,7 @@ function InfoUserOrder() {
                                                                             })
                                                                         }}
                                                                     >
-                                                                        <img src={`http://localhost:3000/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] rounded-[50%] object-cover" />
+                                                                        <img src={`/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] rounded-[50%] object-cover" />
                                                                         <div className="flex flex-col">
                                                                             <h4 className="text-[1.4rem] font-bold text-gray-700 maxlineOne">
                                                                                 {it.Food.dishName}
@@ -430,7 +430,7 @@ function InfoUserOrder() {
                                                                             })
                                                                         }}
                                                                     >
-                                                                        <img src={`http://localhost:3000/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] rounded-[50%] object-cover" />
+                                                                        <img src={`/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] rounded-[50%] object-cover" />
                                                                         <div className="flex flex-col">
                                                                             <h4 className="text-[1.4rem] font-bold text-gray-700 maxlineOne">
                                                                                 {it.Food.dishName}
@@ -510,7 +510,7 @@ function InfoUserOrder() {
                                         return (
                                             <div key={it.id} className="p-[2rem] mb-[2rem] border border-gray-300 rounded-[1rem]">
                                                 <div className="flex items-center gap-[1rem]">
-                                                    <img src={`http://localhost:3000/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover rounded-full" />
+                                                    <img src={`/${it.Food.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover rounded-full" />
                                                     <h4 className="text-gray-700 font-bold">
                                                         {it.Food.dishName}
                                                     </h4>

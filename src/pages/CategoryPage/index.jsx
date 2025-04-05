@@ -195,7 +195,7 @@ function CategoryPage() {
                                                 >
                                                     <div className="w-full md:h-[18rem] flex justify-center items-center rounded-[1.5rem]">
                                                         <div className="w-[12rem] h-[12rem] md:w-[17rem] md:h-[17rem] flex justify-center items-center rounded-[50%]">
-                                                            <img src={`http://localhost:3000/${food.image}`} alt="image" className="w-full h-full md:w-[16rem] md:h-[16rem] rounded-[50%] object-cover group-hover:scale-[1.1] transition-all duration-[.2s] shadowImg"/>
+                                                            <img src={`/${food.image}`} alt="image" className="w-full h-full md:w-[16rem] md:h-[16rem] rounded-[50%] object-cover group-hover:scale-[1.1] transition-all duration-[.2s] shadowImg"/>
                                                         </div>
                                                     </div>
                                                     <div className="flex flex-col w-full md:h-[calc(100%-17rem)] h-[calc(100%-12rem)] px-[1.5rem] py-[1rem]">
@@ -268,7 +268,7 @@ function CategoryPage() {
                                                 >
                                                     <div className="w-full md:h-[18rem] flex justify-center items-center rounded-[1.5rem]">
                                                         <div className="w-[12rem] h-[12rem] md:w-[17rem] md:h-[17rem] flex justify-center items-center rounded-[50%]">
-                                                            <img src={`http://localhost:3000/${food.image}`} alt="image" className="w-full h-full md:w-[16rem] md:h-[16rem] rounded-[50%] object-cover group-hover:scale-[1.1] transition-all duration-[.2s] shadowImg"/>
+                                                            <img src={`/${food.image}`} alt="image" className="w-full h-full md:w-[16rem] md:h-[16rem] rounded-[50%] object-cover group-hover:scale-[1.1] transition-all duration-[.2s] shadowImg"/>
                                                         </div>
                                                     </div>
                                                     <div className="flex flex-col w-full md:h-[calc(100%-17rem)] h-[calc(100%-12rem)] px-[1.5rem] py-[1rem]">

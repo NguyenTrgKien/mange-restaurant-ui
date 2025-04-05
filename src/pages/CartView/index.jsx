@@ -80,7 +80,7 @@ function CartView() {
                                     <div className="w-[35%] flex items-center gap-[2rem]">
                                        
                                         <div className="w-[7rem] h-full flex justify-center items-center">
-                                            <img src={`http://localhost:3000/${item.image}`} alt="" className="w-full"/>
+                                            <img src={`/${item.image}`} alt="" className="w-full"/>
                                         </div>
                                         <div className="text-[1.8rem] maxlineOne">
                                             {item.dishName}

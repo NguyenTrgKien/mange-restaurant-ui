@@ -11,7 +11,7 @@ function EditFood({title,food, handleShowEdit}) {
     const [isCheckBanner, setIsCheckBanner] = useState(false);
     const [isCheckPopular, setIsCheckPopular] = useState(false);
     const [deleteSuccess, setIsDeleteSuccess] = useState(false);
-    const [urlImage, setUrlImage] = useState(`http://localhost:3000/${food.image}`);
+    const [urlImage, setUrlImage] = useState(`/${food.image}`);
     const [valueInput, setValueInput] = useState({
         dishName: food.dishName,
         description: food.description,

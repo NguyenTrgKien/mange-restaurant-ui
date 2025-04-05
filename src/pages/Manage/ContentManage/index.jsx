@@ -82,7 +82,7 @@ function ContentManage({login, content, setCurrentMenu, currentListCategory, dat
                             />
                         ): (
                             <img
-                                src={`http://localhost:3000/${dataAdmin.image}`}
+                                src={`/${dataAdmin.image}`}
                                 className="w-[4.8rem] h-[4.8rem] rounded-[50%] object-cover"
                             />
                         )

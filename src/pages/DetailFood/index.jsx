@@ -121,7 +121,7 @@ function DetailFood() {
                     <div className="flex md:flex-row flex-col items-start ">
                         <div className="relative w-full h-auto md:w-[50%] my-auto flex justify-center
                         items-center rounded-[.5rem] p-[2rem] group">
-                            <img src={`http://localhost:3000/${food.image}`} alt="img" className="w-[25rem] h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[35rem] xl:h-[35rem] object-cover shadowImg"/>
+                            <img src={`/${food.image}`} alt="img" className="w-[25rem] h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[35rem] xl:h-[35rem] object-cover shadowImg"/>
                             {
                                 food?.quantity > 0 ? (
                                     <div className="absolute flex justify-center items-center inset-0 bg-[#5353539f] rounded-[.5rem] opacity-0 group-hover:opacity-[1] transition-all duration-[.4s] cursor-pointer"
@@ -254,7 +254,7 @@ function DetailFood() {
                                     <div key={index} className="gap-[1rem] pb-[1.5rem] mb-[1.5rem] border-b border-b-gray-300">
                                         <div className="flex items-start gap-[1rem]">
                                             <img
-                                                src={item.User?.image?.includes('uploads') ? `http://localhost:3000/${item.User?.image}` : item.User.image === null  ? avataDefault : item.User.image}
+                                                src={item.User?.image?.includes('uploads') ? `/${item.User?.image}` : item.User.image === null  ? avataDefault : item.User.image}
                                                 alt="Avatar"
                                                 className="w-[4rem] h-[4rem] rounded-[50%] object-cover"
                                             />
@@ -306,7 +306,7 @@ function DetailFood() {
                             }
                         }}
                     >
-                        <img src={`http://localhost:3000/${food.image}`} alt="image" className="md:w-[50rem] md:h-[50rem] lg:w-[70rem] lg:h-[70rem] object-cover"/>
+                        <img src={`/${food.image}`} alt="image" className="md:w-[50rem] md:h-[50rem] lg:w-[70rem] lg:h-[70rem] object-cover"/>
                     </div>
                 )
             }

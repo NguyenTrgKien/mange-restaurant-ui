@@ -4,7 +4,7 @@ import { useState } from "react";
 import { createStaff, editStaff } from "../../../../../services/staffService";
 
 function AddStaff({statusStaff, positionStaff, showAddStaff,handleShowAddStaff, handleGetAllStaff}) {
-    const [urlImg, setUrlImg] = useState(showAddStaff === 'add' ? '' : `http://localhost:3000/${showAddStaff.image}`);
+    const [urlImg, setUrlImg] = useState(showAddStaff === 'add' ? '' : `/${showAddStaff.image}`);
     const [createSuccess, setCreateSuccess] = useState(false);
     const [messageError, setMessageError] = useState('');
     const [valueStaff, setValueStaff] = useState({

@@ -115,7 +115,7 @@ function ProfileUser({ login, setDetailUser, setUrlAvatar}) {
                                     />
                                 ) : (
                                     <img
-                                        src={dataProfile?.image?.includes('uploads') ? `http://localhost:3000/${dataProfile.image}` : dataProfile.image === null  ? avataDefault : dataProfile.image}
+                                        src={dataProfile?.image?.includes('uploads') ? `/${dataProfile.image}` : dataProfile.image === null  ? avataDefault : dataProfile.image}
                                         alt="Avatar"
                                         className="w-full h-full object-cover z-[0]"
                                     />

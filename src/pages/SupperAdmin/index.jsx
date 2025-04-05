@@ -38,7 +38,7 @@ function SupperAdmin() {
         ))
         try {
             
-            const response = await fetch("http://localhost:3000/api/v1/create-admin", {
+            const response = await fetch("/api/v1/create-admin", {
                 method: "POST",
                 body: formData, // Không cần đặt `Content-Type`, fetch sẽ tự động thêm
             });

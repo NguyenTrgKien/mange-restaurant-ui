@@ -112,7 +112,7 @@ function PayDish() {
                                                     <tr key={item.id}>
                                                         <td>
                                                             <div className="flex items-center gap-[1rem]">
-                                                                <img src={`http://localhost:3000/${item.image}`} alt="img" className="w-[8rem]"/>
+                                                                <img src={`/${item.image}`} alt="img" className="w-[8rem]"/>
                                                                 <span className="text-[1.8rem] font-bold">{item.dishName}</span> 
                                                             </div>
                                                         </td>

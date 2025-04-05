@@ -85,7 +85,7 @@ function DetailOrder() {
                                     dataDetailOrder?.OrderItems?.map((item) => {
                                         return (
                                             <div key={item?.Food.id} className="flex items-center p-[1rem] border-b border-b-gray-400">
-                                                <img src={`http://localhost:3000/${item?.Food.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover"/>
+                                                <img src={`/${item?.Food.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover"/>
                                                 <div className="flex flex-col pl-[1rem]">
                                                     <span className=" font-bold text-gray-700">{item?.Food.dishName}</span>
                                                     <span className="text-[1.2rem]">Số lượng: {item?.quantityOrder}</span>

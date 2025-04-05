@@ -104,7 +104,7 @@ function Staff() {
                   <tr key={staff.id}>
                     <td>{staff.id}</td>
                     <td className="w-[10rem] h-[8rem]">
-                      <img src={`http://localhost:3000/${staff.image}`} alt="img" className="w-full h-[8rem] rounded-[.1rem] mx-auto object-cover"/>
+                      <img src={`/${staff.image}`} alt="img" className="w-full h-[8rem] rounded-[.1rem] mx-auto object-cover"/>
                     </td>
                     <td>{staff.fullName}</td>
                     <td>{staff.email}</td>
@@ -142,7 +142,7 @@ function Staff() {
               return (
                 <div key={item.id} className="flex items-center gap-[1rem] justify-between py-[2rem] border-b-[.1rem] border-b-[#ccc]">
                   <div>
-                    <img src={`http://localhost:3000/${item.image}`} alt="img" className="w-[6rem] h-[6rem]"/>
+                    <img src={`/${item.image}`} alt="img" className="w-[6rem] h-[6rem]"/>
                   </div>
                   <div className="flex flex-col">
                   <span><strong>Id: </strong> 5</span>

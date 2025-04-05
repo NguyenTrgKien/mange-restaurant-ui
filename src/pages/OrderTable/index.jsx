@@ -254,7 +254,7 @@ function OrderTable() {
                                                     <td>{index + 1}</td>
                                                     <td>
                                                         <div className="w-full flex justify-start items-center">
-                                                            <img src={`http://localhost:3000/${item.image}`} alt="imageFood"  className="w-[4.8rem] h-[4.8rem] object-cover mr-[1rem]"/>
+                                                            <img src={`/${item.image}`} alt="imageFood"  className="w-[4.8rem] h-[4.8rem] object-cover mr-[1rem]"/>
                                                             <span>{item.dishName}</span>
                                                         </div>
                                                     </td>
@@ -296,7 +296,7 @@ function OrderTable() {
                                 return (
                                     <div key={item.id} className="flex items-center justify-between py-[1.5rem] border-b-[.1rem] border-b-[#ccc]">
                                         <div className="w-[50%] flex items-center gap-[1rem]">
-                                            <img src={`http://localhost:3000/${item.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover"/>
+                                            <img src={`/${item.image}`} alt="img" className="w-[4rem] h-[4rem] object-cover"/>
                                             <div className="flex flex-col">
                                                 <h4 className="maxlineOne text-[1.4rem] font-bold">{item.dishName}</h4>
                                                 <p className="maxlineOne text-[1.2rem]">{item.description}</p>
