@@ -23,7 +23,7 @@ function ShowMenuHeader({setShowMenuMobile, login, isMenu, setCurrentMenu, urlAv
                                    />    
                                    ): (
                                        <img
-                                           src={login?.image?.includes('uploads') ? `http://localhost:3000/${login.image}` : login.image === null  ? avataDefault : login.image}
+                                           src={login?.image?.includes('uploads') ? `/${login.image}` : login.image === null  ? avataDefault : login.image}
                                            alt="Avatar"
                                            className="w-[4.8rem] h-[4.8rem] rounded-[50%] object-cover"
                                        />

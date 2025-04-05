@@ -55,7 +55,7 @@ function IntroduceChef() {
                         return (
                             <div key={staff.id} className="relative w-full h-[40rem] md:h-[55rem] group shadow-xl"
                             >
-                                <img src={`http://localhost:3000/${staff.image}`} alt="" className="w-full h-full object-cover rounded-[1rem]"/>
+                                <img src={`/${staff.image}`} alt="" className="w-full h-full object-cover rounded-[1rem]"/>
                                     <div className="absolute flex flex-col px-[4rem] justify-center items-center top-0 left-0 w-full h-full opacity-0 group-hover:opacity-[1] bg-[#494949ae] hv-linear rounded-[1rem]">
                                         <div className="text-[#fff] text-[3rem] text-center">
                                             Bếp Trưởng: {staff.fullName}

@@ -71,7 +71,7 @@ function ShowAddCart({login, isShowAddCart, setIsShowAddCart, setShowCart}) {
                     </span>
                 </div>
                 <div className="flex items-center py-[2rem] border-b-[.1rem] border-b-[#bbb]">
-                    <img src={`http://localhost:3000/${isShowAddCart.product?.image}`} alt="image" className="md:w-[14rem] md:h-[14rem] w-[10rem] h-[10rem] object-cover rounded-[50%]"/>
+                    <img src={`/${isShowAddCart.product?.image}`} alt="image" className="md:w-[14rem] md:h-[14rem] w-[10rem] h-[10rem] object-cover rounded-[50%]"/>
                     <div className="flex flex-col ml-[1rem]">
                         <div className="text-[2rem] md:text-[2.8rem] font-bold maxlineOne">
                             {isShowAddCart.product.dishName}

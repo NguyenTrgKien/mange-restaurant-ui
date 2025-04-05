@@ -179,7 +179,7 @@ function SellWell({ login }) {
                                     <div className='absolute top-[-6rem] left-0 w-full h-[28rem] flex justify-center items-center bg-[transparent] hv-linear perspective-distant'>
                                         <div className='relative w-[20rem] h-[20rem] md:w-[25rem] md:h-[25rem] rounded-[50%] transform-3d group-hover:rotate-x-[45deg] group-hover:translate-y-[8rem] group-hover:translate-z-[10rem] transition-all duration-[.6s]'>
                                             <img
-                                                src={`http://localhost:3000/${item.image}`}
+                                                src={`/${item.image}`}
                                                 alt={item.dishName}
                                                 className='absolute w-full h-full object-cover shadow-2xl shadow-[#000] rounded-[50%] z-[10] backface-hidden translate-z-[10rem]'
                                                 loading="lazy"

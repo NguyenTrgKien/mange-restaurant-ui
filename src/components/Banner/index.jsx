@@ -128,7 +128,7 @@ function Banner({login}) {
                                     }}
                                 >
                                     <div className='absolute left-0 top-[-2rem] w-full h-[10rem] flex justify-center items-center'>
-                                        <img src={`http://localhost:3000/${item.image}`} alt="img" className='xl:w-[9rem] xl:h-[9rem] md:w-[7.5rem] md:h-[7.5rem] w-[8rem] h-[8rem] shadow-2xl group-hover:scale-[1.1] hv-linear rounded-[50%] shadow-[#000]'/>
+                                        <img src={`/${item.image}`} alt="img" className='xl:w-[9rem] xl:h-[9rem] md:w-[7.5rem] md:h-[7.5rem] w-[8rem] h-[8rem] shadow-2xl group-hover:scale-[1.1] hv-linear rounded-[50%] shadow-[#000]'/>
                                     </div>
                                     <div className='pt-[8.4rem] text-center mt-auto'>
                                         <span className='block text-center font-bold text-[#fff] maxlineOne'>
@@ -170,11 +170,11 @@ function Banner({login}) {
                     <img data-animate="imgItemBanner" src={bannerItem2} alt="" className='absolute w-[10rem] h-[10rem] bottom-[2rem] left-[40rem] z-[50] translate-x-[15rem] opacity-0 scale-0 animationAll'/>
                 </div>
                 {/* <div className='absolute lg:left-[10rem] top-[50%]  translate-y-[-50%] sm:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[40rem] xl:h-[40rem] z-50'>
-                    <img data-animate="imgBanner" src={`http://localhost:3000/${currentDishDisplay && currentDishDisplay.image || dataFoodBanner.length > 0 && dataFoodBanner[0].image}`} alt="img" className='rounded-[50%] w-full h-full shadow-2xl shadow-[#000] hover:scale-[1.1] hover:rotate-[20deg] translate-x-[20rem] translate-y-[20rem] opacity-0 scale-[.5] animationAll'/>
+                    <img data-animate="imgBanner" src={`/${currentDishDisplay && currentDishDisplay.image || dataFoodBanner.length > 0 && dataFoodBanner[0].image}`} alt="img" className='rounded-[50%] w-full h-full shadow-2xl shadow-[#000] hover:scale-[1.1] hover:rotate-[20deg] translate-x-[20rem] translate-y-[20rem] opacity-0 scale-[.5] animationAll'/>
                 </div> */}
                 <div className='absolute lg:left-[10rem] top-[50%]  translate-y-[-50%] sm:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[40rem] xl:h-[40rem] z-50'>
                     <div data-animate="imgBanner" className='w-[40rem] h-[40rem] translate-x-[20rem] translate-y-[20rem] opacity-0 scale-[.5] animationAll hover:scale-[1.1]'>
-                        <img  src={`http://localhost:3000/${currentDishDisplay && currentDishDisplay.image || dataFoodBanner.length > 0 && dataFoodBanner[0].image}`} alt="img" className='rounded-[50%] w-full h-full shadow-2xl shadow-[#000] infiniteImgBanner'/>
+                        <img  src={`/${currentDishDisplay && currentDishDisplay.image || dataFoodBanner.length > 0 && dataFoodBanner[0].image}`} alt="img" className='rounded-[50%] w-full h-full shadow-2xl shadow-[#000] infiniteImgBanner'/>
                     </div>
                 </div>
             </div>

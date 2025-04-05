@@ -113,7 +113,7 @@ function ListWater({login}) {
                                 }}
                             >
                                 <div className="w-full h-[25rem] flex justify-center items-center">
-                                    <img src={`http://localhost:3000/${item.image}`} alt="" className="w-[20rem] h-[20rem] group-hover:scale-[1.15] hv-linear shadowImg"/>
+                                    <img src={`/${item.image}`} alt="" className="w-[20rem] h-[20rem] group-hover:scale-[1.15] hv-linear shadowImg"/>
                                 </div>
                                 <h3 className="text-[2.4rem] font-semibold maxlineOne text-center mt-[.5rem]">
                                     {item.dishName}
