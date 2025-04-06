@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosConfig = axios.create({
-    baseURL: 'https://quanlynhahang.onrender.com',
+    baseURL: 'https://manage-restaurant-server-production.up.railway.app',
     withCredentials: true,
     headers: {
         "Content-Type": "application/json",

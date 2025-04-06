@@ -41,11 +41,13 @@ function SupperAdmin() {
             const response = await fetch("https://quanlynhahang.onrender.com/api/v1/create-admin", {
                 method: "POST",
                 body: formData,
-                credentials: 'include' // Nếu dùng session
+                credentials: 'include'
             });
     
             const result = await response.json();
-            console.log("Tạo admin thành công:", result);
+            if(result.errCode === 0) {
+                console.log("Tạo admin thành công:", result);
+            }
         } catch (error) {
             console.error("Lỗi khi tạo admin:", error);
         }
